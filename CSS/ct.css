@@ -1,0 +1,82 @@
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    #main{
+        width: 830px;
+        height: 570px;
+        margin: 50px auto;
+        border-radius: 20px 20px 0 0;
+    }
+    #main .tabs li{
+        width: 274.5px;
+        height: 100px;
+        background: peachpuff;
+        float: left;
+        cursor: pointer;
+        border: 1px solid;
+        border-collapse: collapse;
+        font-size: 32px;
+        text-align: center;
+        line-height: 100px;
+        border: 1px solid lightslategrey;
+        border-radius: 20px 20px 0 0;
+    }
+    #main .tabs .act{
+        background: lightblue;
+        border-bottom:1px solid peru ;
+    }
+    #main #content>div{
+        display: none;
+    }
+    #main #content .show{
+        display: block;
+    }
+    #main #content .ctboxs{
+    width: 830px;
+    height: 470px;
+    position: relative;
+    overflow: hidden;
+}
+#main #content .ctboxs .ctbox{
+    width: 650px;
+    height: 470px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    transition: 2s;
+}
+#main #content .ctboxs .ct1{
+    left: 0;
+}
+#main #content .ctboxs .ct2{
+    left: 650px;
+}
+#main #content .ctboxs .ct3{
+    left: 710px;
+}
+#main #content .ctboxs .ct4{
+    left: 770px;
+}
+#main #content .ctboxs .ctbox .title{
+    color: #fff;
+    font-size: 22px;
+    padding: 130px 19px 0;
+    line-height: 36px;
+    cursor: pointer;
+}
+#main #content .ctboxs .ct1 .title{
+    background: rgb(0,0 , 127);
+}
+#content .ctboxs .ct2 .title{
+    background: rgb(238,136 , 0);
+}
+#main #content .ctboxs .ct3 .title{
+    background: rgb(126,127 , 0);
+}
+#main #content .ctboxs .ct4 .title{
+    background: rgb(35,97 , 173);
+}

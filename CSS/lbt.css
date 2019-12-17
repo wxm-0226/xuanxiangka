@@ -1,0 +1,79 @@
+#main #content #lbt ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #main #content #lbt.box{
+            width: 830px;
+            height: 470px;
+            position: relative;
+            overflow: hidden;
+        }
+        #main #content #lbt .imgs{
+            position: absolute;
+        }
+        #main #content #lbt .imgs li{
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: -1;
+            transition: 1s linear;
+        }
+        #main #content #lbt .imgs .show{
+            opacity: 1;
+            z-index: 0;
+        }
+        #main #content #lbt .imgs img{
+            display: block;
+        }
+        #main #content #lbt .arrows span{
+            position: absolute;
+            top: 215px;
+            font-family: serif;
+            font-size: 36px;
+            color: #fff;
+            background: #000;
+            text-align: center;
+            width: 30px;
+            height: 40px;
+            line-height: 40px;
+            cursor: pointer;
+            opacity: .5;
+            z-index: 999;
+        }
+        #main #content #lbt .box:hover .arrows span{
+            opacity: .5;
+        }
+        #main #content #lbt .box .arrows span:hover{
+            opacity: 1;
+        }
+        #main #content #lbt .arrows .left{
+            left: 0;
+        }
+        #main #content #lbt .arrows .right{
+            right: 0;
+        }
+        #main #content #lbt .dots{
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        #main #content #lbt .dots li{
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 24px;
+            text-align: center;
+            background: orange;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            margin: 0 2px;
+            cursor: pointer;
+        }
+        #main #content #lbt .dots .act{
+            background: red;
+            color: #fff;
+        }
